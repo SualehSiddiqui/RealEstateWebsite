@@ -31,7 +31,7 @@ const pages = [
 export default function FooterComp() {
     return (
         <MDBFooter bgColor='black' color='white' className='text-center text-lg-start text-muted'>
-            <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
+            <section className='d-flex justify-content-center justify-content-lg-between border-bottom p-2'>
                 <div className='me-5 d-none d-lg-block'>
                     <span className='white-color'>Get connected with us on social networks:</span>
                 </div>
@@ -52,8 +52,8 @@ export default function FooterComp() {
                 </div>
             </section>
 
-            <section className=''>
-                <MDBContainer className='text-center text-md-start mt-5'>
+            <section className='footer'>
+                <MDBContainer className='text-center text-md-start mt-2'>
                     <MDBRow className='mt-3'>
                         <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4 white-color'>
                             <img src={FooterLogo} alt="FooterLogo" className='footer-logo' />
