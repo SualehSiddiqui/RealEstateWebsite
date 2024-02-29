@@ -56,7 +56,7 @@ export default function FooterComp() {
                 <MDBContainer className='text-center text-md-start mt-2'>
                     <MDBRow className='mt-3'>
                         <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4 white-color'>
-                            <img src={FooterLogo} alt="FooterLogo" className='footer-logo' />
+                            <img src={FooterLogo} alt="FooterLogo" className='footer-logo' data-aos-duration="700" data-aos="zoom-in" />
                         </MDBCol>
 
                         <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
