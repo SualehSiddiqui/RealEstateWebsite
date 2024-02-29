@@ -208,25 +208,31 @@ const HomePage = () => {
             </div>
             <CounterComp className='res-counter' />
             <div className='main-home-div-2'>
-                <Container data-aos-duration="700" data-aos="zoom-in-up">
+                <Container >
                     <div className='main-hd-div'>
                         <div className='hd-div'>
-                            <h1>It is one thing to meet</h1>
-                            <h2>Expectations...</h2>
-                            <h3>It is one thing to meet <span className='golden-color'>Expectations...</span></h3>
+                            <h1 data-aos-duration="700" data-aos="fade-right">It is one thing to meet</h1>
+                            <h2 data-aos-duration="700" data-aos="fade-right">Expectations...</h2>
+                            <h3 data-aos-duration="700" data-aos="fade-right">
+                                It is one thing to meet
+                                <span className='golden-color'>Expectations...</span>
+                            </h3>
                         </div>
                         <div className='hd-div'>
-                            <h1>It is another to</h1>
-                            <h2 className='text-end'>exceed them.</h2>
-                            <h3>It is another to <span className='golden-color'>exceed them.</span></h3>
+                            <h1 data-aos-duration="700" data-aos="fade-left">It is another to</h1>
+                            <h2 className='text-end' data-aos-duration="700" data-aos="fade-left">exceed them.</h2>
+                            <h3 data-aos-duration="700" data-aos="fade-right">
+                                It is another to
+                                <span className='golden-color'>exceed them.</span>
+                            </h3>
                         </div>
                     </div>
-                    <p className='mt-3 text-center'>
+                    <p className='mt-3 text-center' data-aos-duration="700" data-aos="zoom-in-up">
                         What makes an agent a great agent? At Lush Lets London Property Consultants, we believe
                         it encompasses the ability to evoke curiosity. Nothing brings us greater satisfaction than
                         exceeding individuals' anticipations.
                     </p>
-                    <p className='text-center'>
+                    <p className='text-center' data-aos-duration="700" data-aos="zoom-in-up">
                         This principle permeates our entire organization, culminating in a cohesive assembly of fervent
                         specialists offering a novel perspective on the complete range of residential and commercial property
                         acquisitions and transactions.
@@ -345,7 +351,7 @@ const HomePage = () => {
                     </div>
                     <div className='home-banner home-banner-4'>
                         <div>
-                            <h1>
+                            <h1 data-aos-duration="700" data-aos="fade-right">
                                 OUR LANDLORD SOLUTIONS
                             </h1>
                             <p className='golden-color'>
@@ -383,7 +389,7 @@ const HomePage = () => {
                                 <img src={HouseImg} alt="house_img" className='house-img' data-aos-duration="700" data-aos="zoom-in" />
                             </div>
                             <div className='benefit-sec-text'>
-                                <h3 className='golden-color'>BENEFITS OF GUARANTEED RENTAL</h3>
+                                <h3 className='golden-color' data-aos-duration="700" data-aos="fade-right">BENEFITS OF GUARANTEED RENTAL</h3>
                                 <ul>
                                     <li>Prompt Rental Payment</li>
                                     <li>0% Commission</li>
@@ -394,7 +400,7 @@ const HomePage = () => {
                                 </ul>
                             </div>
                         </div>
-                        <h1>
+                        <h1 data-aos-duration="700" data-aos="fade-right">
                             WHY <span className='golden-color'>LUSH LET LONDON LTD INTERNATIONAL?</span>
                         </h1>
                         <div className='main-home-cards-div mt-3' data-aos-duration="700" data-aos="zoom-in">
@@ -435,7 +441,7 @@ const HomePage = () => {
                 </Container>
                 <div className='home-banner home-banner-4 home-banner-6 mb-5'>
                     <Container>
-                        <h1 className='text-start'>
+                        <h1 className='text-start' data-aos-duration="700" data-aos="fade-right">
                             FEATURED <span className='golden-color'>PROPERTIES</span>
                         </h1>
                         <div className='main-home-cards-div mt-3' data-aos-duration="700" data-aos="zoom-in">
