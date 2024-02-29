@@ -3,7 +3,6 @@
   --theme-color-2: #eeb111;
 }
 
-
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -13,4 +12,17 @@ body {
 
 code {
   font-family: "Poppins", sans-serif;
+}
+
+.main-body-div {
+  width: 100%;
+  min-height: 57.7vh;
+}
+
+.golden-color {
+  color: var(--theme-color-2) !important;
+}
+
+.white-color {
+  color: #fff !important;
 }

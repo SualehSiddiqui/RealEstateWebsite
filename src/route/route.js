@@ -6,9 +6,12 @@ import {
 
 //Pages
 import HomePage from '../Pages/Home';
+import AboutPage from '../Pages/About';
+import NotFoundPage from '../Pages/NotFound';
+
+//Components
 import NavScroll from '../Components/Navbar';
 import FooterComp from '../Components/Footer';
-import NotFoundPage from '../Pages/NotFound';
 import ScrollToTop from '../Components/ScrollToTop';
 
 const RouterPages = () => {
@@ -18,6 +21,7 @@ const RouterPages = () => {
             <ScrollToTop />
             <Routes>
                 <Route path='/' element={<HomePage />} />
+                <Route path='/About' element={<AboutPage />} />
                 <Route path='*' element={<NotFoundPage />} />
             </Routes>
             <FooterComp />

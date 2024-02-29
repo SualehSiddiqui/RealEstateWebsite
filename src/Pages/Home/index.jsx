@@ -12,7 +12,7 @@ const HomePage = () => {
         AOS.init();
     }, [])
     return (
-        <>
+        <div className='main-body-div'>
             <div className="sub-header-div">
                 <Container className='sub-header-div-container'>
                     <div className='selection-div selection-div-1'>
@@ -108,8 +108,11 @@ const HomePage = () => {
             <div className='main-home-div'>
                 <Container>
                     <div className='home-text-div'>
-                        <h1>Lush Lets London Ltd</h1>
-                        <h1>Property Consultants</h1>
+                        <div>
+                            Lush Lets London Ltd
+                            <br />
+                            Property Consultants
+                        </div>
                         <p>We pride ourselves on being specialists in all aspects of residential and commercial property</p>
                     </div>
                     <CounterComp className='counter mt-5' />
@@ -206,7 +209,7 @@ const HomePage = () => {
                     </div>
                 </Container>
             </div>
-            <CounterComp className='res-counter' />
+            <CounterComp className='res-counter mt-3 mb-3' />
             <div className='main-home-div-2'>
                 <Container >
                     <div className='main-hd-div'>
@@ -444,8 +447,8 @@ const HomePage = () => {
                         <h1 className='text-start' data-aos-duration="700" data-aos="fade-right">
                             FEATURED <span className='golden-color'>PROPERTIES</span>
                         </h1>
-                        <div className='main-home-cards-div mt-3' data-aos-duration="700" data-aos="zoom-in">
-                            <div className='properties-card-div properties-card-div-1'>
+                        <div className='main-home-cards-div mt-3'>
+                            <div className='properties-card-div properties-card-div-1' data-aos-duration="700" data-aos="zoom-in">
                                 <div className='img-div'>
                                     <div className='sub-properties-card-div-1'></div>
                                     <div className='sub-properties-card-div-2'></div>
@@ -457,7 +460,7 @@ const HomePage = () => {
                                     Marylebone
                                 </p>
                             </div>
-                            <div className='properties-card-div properties-card-div-2'>
+                            <div className='properties-card-div properties-card-div-2' data-aos-duration="700" data-aos="zoom-in">
                                 <div className='img-div'>
                                     <div className='sub-properties-card-div-3'></div>
                                     <div className='sub-properties-card-div-2'></div>
@@ -467,7 +470,7 @@ const HomePage = () => {
                                     Gloucester Place, Marylebone
                                 </p>
                             </div>
-                            <div className='properties-card-div properties-card-div-3'>
+                            <div className='properties-card-div properties-card-div-3' data-aos-duration="700" data-aos="zoom-in">
                                 <div className='img-div'>
                                     <div className='sub-properties-card-div-3'></div>
                                     <div className='sub-properties-card-div-2'></div>
@@ -479,13 +482,12 @@ const HomePage = () => {
                             </div>
                         </div>
                     </Container>
-
                 </div>
                 <Container>
                     <CarouselComp />
                 </Container>
             </div>
-        </>
+        </div>
     )
 }
 
