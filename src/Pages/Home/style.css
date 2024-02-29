@@ -12,6 +12,10 @@
     height: 60px;
 }
 
+.res-sub-header-div {
+    display: none;
+}
+
 .sub-header-div-container {
     height: 100%;
     display: flex;
@@ -476,15 +480,6 @@
     }
 }
 
-@media screen and (max-width: 566px) {
-    .home-card-div {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .benefit-section {
         display: flex;
@@ -497,6 +492,30 @@
     }
 
     .benefit-sec-text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 566px) {
+    .home-card-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sub-header-div {
+        display: none;
+    }
+
+    .res-sub-header-div {
+        display: flex;
+        height: auto;
+        padding-top: 20px; 
+        padding-bottom: 20px;
+    }
+
+    .button-div-sub-header>button{
         width: 100%;
     }
 }

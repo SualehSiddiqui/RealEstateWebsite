@@ -1,6 +1,5 @@
 import './style.css';
 import { Carousel } from 'antd';
-import Container from 'react-bootstrap/Container';
 
 
 const CorouselComp = () => (

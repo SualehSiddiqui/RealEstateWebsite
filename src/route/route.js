@@ -15,7 +15,7 @@ const RouterPages = () => {
     return (
         <Router>
             <NavScroll />
-            {/* <ScrollToTop /> */}
+            <ScrollToTop />
             <Routes>
                 <Route path='/' element={<HomePage />} />
                 <Route path='*' element={<NotFoundPage />} />
