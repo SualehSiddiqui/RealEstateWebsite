@@ -3,8 +3,14 @@ import Container from 'react-bootstrap/Container';
 import SeperatorImg from '../../assets/Home/seperator-img.png'
 import HouseImg from '../../assets/Home/house.png';
 import CarouselComp from '../../Components/Carousel/index.jsx';
+import CounterComp from '../../Components/Counter/index.jsx';
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 const HomePage = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <>
             <div className="sub-header-div">
@@ -106,6 +112,7 @@ const HomePage = () => {
                         <h1>Property Consultants</h1>
                         <p>We pride ourselves on being specialists in all aspects of residential and commercial property</p>
                     </div>
+                    <CounterComp className='counter mt-5' />
                 </Container>
             </div>
             <div className="sub-header-div res-sub-header-div">
@@ -199,8 +206,9 @@ const HomePage = () => {
                     </div>
                 </Container>
             </div>
+            <CounterComp className='res-counter' />
             <div className='main-home-div-2'>
-                <Container>
+                <Container data-aos-duration="700" data-aos="zoom-in-up">
                     <div className='main-hd-div'>
                         <div className='hd-div'>
                             <h1>It is one thing to meet</h1>
@@ -229,7 +237,7 @@ const HomePage = () => {
                         <div className='sub-seperator-div-1'></div>
                     </div>
                     <div className='home-banner'>
-                        <div>
+                        <div data-aos-duration="700" data-aos="zoom-in-up">
                             <h1 className='golden-color'>L4 PROPERTY Management</h1>
                             <h3 className='white-color mt-4'>Helps Landlords Achieve More</h3>
                             <h2 className='white-color mb-4'>With Guaranteed Rent Services</h2>
@@ -247,7 +255,7 @@ const HomePage = () => {
                         <div className='sub-seperator-div-1'></div>
                     </div>
                     <div className='home-banner home-banner-2'>
-                        <div>
+                        <div data-aos-duration="700" data-aos="zoom-in-up">
                             <h2 className='golden-color'>
                                 L-Four Property Management Guarantee's Landlords a rental income
                                 regardless of tenants or not.
@@ -269,7 +277,7 @@ const HomePage = () => {
                         <div className='sub-seperator-div-1'></div>
                     </div>
                     <div className='home-banner home-banner-3'>
-                        <div className='form-main-div'>
+                        <div className='form-main-div' data-aos-duration="700" data-aos="zoom-in-up">
                             <form action="">
                                 <h1 className='white-color'>Need A Quote</h1>
                                 <p className='golden-color'>
@@ -347,17 +355,17 @@ const HomePage = () => {
                             </p>
                         </div>
                         <div className='main-home-cards-div'>
-                            <div className='home-card-div'>
+                            <div className='home-card-div' data-aos-duration="700" data-aos="zoom-in">
                                 <h2 className='white-color'>Guaranteed Rent Management</h2>
                                 <p className='white-color'>We help landlords maximize their rental income through guaranteed rent.</p>
                                 <button className='home-card-btn'>Our Landlord Solution</button>
                             </div>
-                            <div className='home-card-div home-card-div-2'>
+                            <div className='home-card-div home-card-div-2' data-aos-duration="700" data-aos="zoom-in" >
                                 <h2 className='white-color'>Residential Letting In London For Landlords</h2>
                                 <p className='white-color'>Helping landlords collect rent and rent out properties with peace of mind. Letting properties the intelligent guaranteed way.</p>
                                 <button className='home-card-btn'>Our Landlord Solution</button>
                             </div>
-                            <div className='home-card-div home-card-div-3'>
+                            <div className='home-card-div home-card-div-3' data-aos-duration="700" data-aos="zoom-in">
                                 <h2 className='white-color'>Complete Property Management & Repairs</h2>
                                 <p className='white-color'>Get monthly income with peace of mind and allow us to service your property for you. Giving you peace of mind month after month, year after year.</p>
                                 <button className='home-card-btn'>Property management</button>
@@ -366,13 +374,13 @@ const HomePage = () => {
                     </div>
                     <div className='seperator mt-5 mb-5'>
                         <div className='sub-seperator-div-1'></div>
-                        <img src={SeperatorImg} alt="" />
+                        <img src={SeperatorImg} alt="SeperatorImg" />
                         <div className='sub-seperator-div-1'></div>
                     </div>
                     <div className='home-banner home-banner-4 home-banner-5'>
                         <div className='benefit-section'>
                             <div className='benefit-sec-img'>
-                                <img src={HouseImg} alt="house_img" className='house-img' />
+                                <img src={HouseImg} alt="house_img" className='house-img' data-aos-duration="700" data-aos="zoom-in" />
                             </div>
                             <div className='benefit-sec-text'>
                                 <h3 className='golden-color'>BENEFITS OF GUARANTEED RENTAL</h3>
@@ -389,8 +397,8 @@ const HomePage = () => {
                         <h1>
                             WHY <span className='golden-color'>LUSH LET LONDON LTD INTERNATIONAL?</span>
                         </h1>
-                        <div className='main-home-cards-div mt-3'>
-                            <div className='benefit-card-div'>
+                        <div className='main-home-cards-div mt-3' data-aos-duration="700" data-aos="zoom-in">
+                            <div className='benefit-card-div' data-aos-duration="700" data-aos="zoom-in" >
                                 <div className='benefit-card-img-div'></div>
                                 <h4 className='text-center'>Network & Connections</h4>
                                 <p className='text-center'>
@@ -399,7 +407,7 @@ const HomePage = () => {
                                     perfect property.
                                 </p>
                             </div>
-                            <div className='benefit-card-div'>
+                            <div className='benefit-card-div' data-aos-duration="700" data-aos="zoom-in">
                                 <div className='benefit-card-img-div benefit-card-img-div-2'></div>
                                 <h4 className='text-center'>Network & Connections</h4>
                                 <p className='text-center'>
@@ -408,7 +416,7 @@ const HomePage = () => {
                                     perfect property.
                                 </p>
                             </div>
-                            <div className='benefit-card-div'>
+                            <div className='benefit-card-div' data-aos-duration="700" data-aos="zoom-in">
                                 <div className='benefit-card-img-div benefit-card-img-div-3'></div>
                                 <h4 className='text-center'>Network & Connections</h4>
                                 <p className='text-center'>
@@ -430,7 +438,7 @@ const HomePage = () => {
                         <h1 className='text-start'>
                             FEATURED <span className='golden-color'>PROPERTIES</span>
                         </h1>
-                        <div className='main-home-cards-div mt-3'>
+                        <div className='main-home-cards-div mt-3' data-aos-duration="700" data-aos="zoom-in">
                             <div className='properties-card-div properties-card-div-1'>
                                 <div className='img-div'>
                                     <div className='sub-properties-card-div-1'></div>
