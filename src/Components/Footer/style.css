@@ -1,0 +1,27 @@
+.white-color {
+    color: #fff !important;
+}
+
+.footer-links {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer-links:hover,
+.social-links:hover {
+    color: var(--theme-color-2) !important;
+}
+
+.sub-footer {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(30, 29, 29, 0.75);
+    color: #fff;
+}
+
+.footer-logo{
+    width: 170px;
+}

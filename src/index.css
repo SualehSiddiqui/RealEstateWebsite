@@ -1,0 +1,16 @@
+:root {
+  --theme-color-1: #000;
+  --theme-color-2: #eeb111;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Poppins", sans-serif;
+}

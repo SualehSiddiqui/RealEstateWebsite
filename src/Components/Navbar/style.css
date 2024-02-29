@@ -1,0 +1,40 @@
+.main-navbar {
+    background-color: var(--theme-color-1);
+    min-height: 80px !important;
+}
+
+.nav-links {
+    color: #fff;
+    text-align: center;
+    line-height: 1.0em;
+    font-weight: 600;
+}
+
+.nav-links:hover {
+    color: var(--theme-color-2);
+    border-bottom: 1px solid var(--theme-color-2);
+}
+
+.nav-active-link {
+    color: var(--theme-color-2);
+}
+
+.navbar-logo-img {
+    height: 60px;
+}
+
+.nav-phone-link {
+    color: var(--theme-color-2);
+    text-align: center;
+    line-height: 1.0em;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.nav-phone-link:hover{
+    color: #fff;
+}
+
+.navbar-toggler{
+    background-color: #fff;
+}
