@@ -4,7 +4,7 @@ import { Carousel } from 'antd';
 
 const CorouselComp = () => (
     <div>
-        <h1 className='carousel-hd'>CLIENT <span className='golden-color'>TESTIMONIALS</span></h1>
+        <h1 className='carousel-hd' data-aos-duration="700" data-aos="fade-right">CLIENT <span className='golden-color'>TESTIMONIALS</span></h1>
         <Carousel autoplay className='carousel-div' fade speed={1000} autoplaySpeed={5000}>
             <div className='carousel-div'>
                 <div className='client-statement-div'>

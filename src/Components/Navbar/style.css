@@ -31,10 +31,30 @@
     font-size: 17px;
 }
 
-.nav-phone-link:hover{
+.nav-phone-link:hover {
     color: #fff;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     background-color: #fff;
+}
+
+#nav-dropdown {
+    color: white;
+}
+
+.dropdown-menu{
+    padding: 0;
+}
+
+.dropdown-menu-item {
+    height: 40px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.dropdown-menu-item:hover {
+    background-color: var(--theme-color-1);
+    color: var(--theme-color-2);
 }

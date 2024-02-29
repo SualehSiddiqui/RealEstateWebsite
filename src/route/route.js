@@ -7,6 +7,9 @@ import {
 //Pages
 import HomePage from '../Pages/Home';
 import AboutPage from '../Pages/About';
+import MaintenancePage from '../Pages/Maintenance';
+import ContactPage from '../Pages/Contact';
+import PropertyPage from '../Pages/Property';
 import NotFoundPage from '../Pages/NotFound';
 
 //Components
@@ -22,6 +25,9 @@ const RouterPages = () => {
             <Routes>
                 <Route path='/' element={<HomePage />} />
                 <Route path='/About' element={<AboutPage />} />
+                <Route path='/Contact' element={<ContactPage />} />
+                <Route path='/PropertyManagement' element={<PropertyPage />} />
+                <Route path='/Maintenance' element={<MaintenancePage />} />
                 <Route path='*' element={<NotFoundPage />} />
             </Routes>
             <FooterComp />

@@ -1,20 +1,27 @@
 import { Container } from 'react-bootstrap';
 import './style.css';
 import SeperatorImg from '../../assets/Home/seperator-img.png'
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 const AboutPage = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <div className='main-body-div'>
             <div className='about-banner-div'></div>
             <Container className='about-text-container'>
-                <div>
-                    about &nbsp;
+                <div className='text-center about-text'  data-aos-duration="700" data-aos="zoom-in">
+                    about&nbsp;
                     <span className='golden-color'>
                         LUSH LET LONDON LTD
                     </span>
                 </div>
                 <div className='line-div'></div>
-                <ul>
+                <ul data-aos-duration="700" data-aos="zoom-in-up">
                     <li>
                         L-Four Properties stands as a prominent figure in Central London's real
                         estate landscape, specializing in both residential and commercial properties.

@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavLogo from '../../assets/nav-logo.png'
 import { useLocation } from 'react-router-dom';
 import { FaPhoneAlt } from "react-icons/fa";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 const pages = [
@@ -14,19 +15,26 @@ const pages = [
     },
     {
         name: 'About',
-        link: '/about',
+        link: '/About',
     },
     {
         name: 'Properties',
-        link: '/properties',
+        link: '/Properties',
     },
     {
         name: 'Management',
         link: '/management',
+        subLink: [{
+            name: 'Maintenance',
+            link: '/Maintenance'
+        }, {
+            name: 'Property Management',
+            link: '/PropertyManagement'
+        }]
     },
     {
         name: 'Contact',
-        link: '/contact',
+        link: '/Contact',
     },
 ]
 
@@ -42,14 +50,41 @@ function OffcanvasExample() {
                     <Navbar.Brand href="/">
                         <img src={NavLogo} className='navbar-logo-img' alt="navbar_logo" />
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" style={{color: 'white'}} />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ color: 'white' }} />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto me-auto">
                             {
                                 pages.map((v, i) => {
-                                    return (
-                                        <Nav.Link className={`nav-links ms-2 ${pathname === v.link ? 'nav-active-link' : ''}`} href={v.link} key={i}>{v.name}</Nav.Link>
-                                    )
+                                    if (v.subLink) {
+                                        return (
+                                            <NavDropdown
+                                                key={v.name}
+                                                title={v.name}
+                                                id="nav-dropdown"
+                                                className='nav-links ms-2'
+                                            >
+                                                {v.subLink.map((subValue, subIndex) => (
+                                                    <NavDropdown.Item
+                                                        key={subValue.name}
+                                                        href={subValue.link}
+                                                        className='dropdown-menu-item'
+                                                    >
+                                                        {subValue.name}
+                                                    </NavDropdown.Item>
+                                                ))}
+                                            </NavDropdown>
+                                        )
+                                    } else {
+                                        return (
+                                            <Nav.Link
+                                                key={v.name}
+                                                className={`nav-links ms-2 ${pathname === v.link ? 'nav-active-link' : ''}`}
+                                                href={v.link}
+                                            >
+                                                {v.name}
+                                            </Nav.Link>
+                                        )
+                                    }
                                 })
                             }
                         </Nav>

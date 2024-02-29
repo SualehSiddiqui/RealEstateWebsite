@@ -230,16 +230,18 @@ const HomePage = () => {
                             </h3>
                         </div>
                     </div>
-                    <p className='mt-3 text-center' data-aos-duration="700" data-aos="zoom-in-up">
-                        What makes an agent a great agent? At Lush Lets London Property Consultants, we believe
-                        it encompasses the ability to evoke curiosity. Nothing brings us greater satisfaction than
-                        exceeding individuals' anticipations.
-                    </p>
-                    <p className='text-center' data-aos-duration="700" data-aos="zoom-in-up">
-                        This principle permeates our entire organization, culminating in a cohesive assembly of fervent
-                        specialists offering a novel perspective on the complete range of residential and commercial property
-                        acquisitions and transactions.
-                    </p>
+                    <div data-aos-duration="700" data-aos="zoom-in-up">
+                        <p className='mt-3 text-center'>
+                            What makes an agent a great agent? At Lush Lets London Property Consultants, we believe
+                            it encompasses the ability to evoke curiosity. Nothing brings us greater satisfaction than
+                            exceeding individuals' anticipations.
+                        </p>
+                        <p className='text-center'>
+                            This principle permeates our entire organization, culminating in a cohesive assembly of fervent
+                            specialists offering a novel perspective on the complete range of residential and commercial property
+                            acquisitions and transactions.
+                        </p>
+                    </div>
                     <div className='seperator mt-5 mb-5'>
                         <div className='sub-seperator-div-1'></div>
                         <img src={SeperatorImg} alt="" />

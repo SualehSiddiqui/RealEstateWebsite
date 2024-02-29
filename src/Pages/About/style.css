@@ -12,10 +12,13 @@
     padding-bottom: 40px;
 }
 
-.about-text-container>div {
+.about-text-container>.about-text {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .line-div {
@@ -49,5 +52,9 @@
 @media screen and (max-width: 480px) {
     .about-banner-div {
         height: 150px;
+    }
+
+    .about-text-container>.about-text {
+        font-size: 34px;
     }
 }

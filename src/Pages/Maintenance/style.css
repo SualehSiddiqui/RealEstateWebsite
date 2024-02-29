@@ -1,0 +1,4 @@
+.maintenance-link {
+    text-decoration: none;
+    color: var(--theme-color-2);
+}

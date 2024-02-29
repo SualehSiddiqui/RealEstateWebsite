@@ -1,0 +1,30 @@
+.table-head {
+    min-height: 50px !important;
+    background-color: var(--theme-color-2) !important;
+}
+
+.table-head-1 {
+    width: 75%;
+}
+
+.tick-icon-table {
+    border-bottom-color: var(--theme-color-2);
+}
+
+.about-text-container-h1,
+.about-text-container-h1-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-text-container-h1-2 {
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 992px) {
+
+    .about-text-container-h1,
+    .about-text-container-h1-2 {
+        justify-content: center;
+    }
+}
