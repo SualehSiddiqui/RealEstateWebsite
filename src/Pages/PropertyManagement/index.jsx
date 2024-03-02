@@ -38,7 +38,7 @@ const PropertyPage = () => {
 
     return (
         <div className='main-body-div'>
-            <div className='about-banner-div'></div>
+            <div className='about-banner-div property-management-banner-div'></div>
             <Container className='about-text-container'>
                 <div>
                     <h1 className='text-uppercase about-text-container-h1'>

@@ -15,7 +15,7 @@ const MaintenancePage = () => {
 
     return (
         <div className='main-body-div'>
-            <div className='about-banner-div'></div>
+            <div className='about-banner-div maintenance-banner-div'></div>
             <Container className='about-text-container'>
                 <div className='text-center about-text' data-aos-duration="700" data-aos="zoom-in">
                     PROPERTY&nbsp;

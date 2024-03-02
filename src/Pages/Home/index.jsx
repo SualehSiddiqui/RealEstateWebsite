@@ -6,6 +6,7 @@ import CarouselComp from '../../Components/Carousel/index.jsx';
 import CounterComp from '../../Components/Counter/index.jsx';
 import AOS from 'aos';
 import { useEffect } from 'react';
+import PropertiesSec from '../../Sections/properties.jsx';
 
 const HomePage = () => {
     useEffect(() => {
@@ -107,7 +108,7 @@ const HomePage = () => {
             <div className='hero-section-div'></div>
             <div className='main-home-div'>
                 <Container>
-                    <div className='home-text-div'>
+                    <div className='home-text-div'  data-aos-duration="700" data-aos="zoom-in">
                         <div>
                             Lush Lets London Ltd
                             <br />
@@ -446,43 +447,7 @@ const HomePage = () => {
                 </Container>
                 <div className='home-banner home-banner-4 home-banner-6 mb-5'>
                     <Container>
-                        <h1 className='text-start' data-aos-duration="700" data-aos="fade-right">
-                            FEATURED <span className='golden-color'>PROPERTIES</span>
-                        </h1>
-                        <div className='main-home-cards-div mt-3'>
-                            <div className='properties-card-div properties-card-div-1' data-aos-duration="700" data-aos="zoom-in">
-                                <div className='img-div'>
-                                    <div className='sub-properties-card-div-1'></div>
-                                    <div className='sub-properties-card-div-2'></div>
-
-                                </div>
-                                <p>
-                                    Gloucester Place,
-                                    <br />
-                                    Marylebone
-                                </p>
-                            </div>
-                            <div className='properties-card-div properties-card-div-2' data-aos-duration="700" data-aos="zoom-in">
-                                <div className='img-div'>
-                                    <div className='sub-properties-card-div-3'></div>
-                                    <div className='sub-properties-card-div-2'></div>
-
-                                </div>
-                                <p>
-                                    Gloucester Place, Marylebone
-                                </p>
-                            </div>
-                            <div className='properties-card-div properties-card-div-3' data-aos-duration="700" data-aos="zoom-in">
-                                <div className='img-div'>
-                                    <div className='sub-properties-card-div-3'></div>
-                                    <div className='sub-properties-card-div-2'></div>
-
-                                </div>
-                                <p>
-                                    Gloucester Place, Baker Street
-                                </p>
-                            </div>
-                        </div>
+                        <PropertiesSec />
                     </Container>
                 </div>
                 <Container>

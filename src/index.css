@@ -17,6 +17,7 @@ code {
 .main-body-div {
   width: 100%;
   min-height: 57.7vh;
+  margin-bottom: 100px;
 }
 
 .golden-color {
