@@ -6,8 +6,11 @@ import { useEffect } from 'react';
 import properties from '../../Data/Property.js';
 import { useSearchParams } from 'react-router-dom';
 import PropertiesSec from '../../Sections/properties.jsx'
+import { Image } from 'antd';
+
 
 const PropertyManagementPage = () => {
+    // eslint-disable-next-line
     let [searchParams, setSearchParams] = useSearchParams();
     const index = searchParams.get('index') || 0;
     const { name, price, images, text } = properties[index];
@@ -35,7 +38,7 @@ const PropertyManagementPage = () => {
                                 images.map((v, i) => {
                                     return (
                                         <div className='small-img-div' key={i}>
-                                            <img src={require(`../../assets/Properties/${v}`)} alt="sub_img" />
+                                            <Image src={require(`../../assets/Properties/${v}`)} alt="sub_img" />
                                         </div>
 
                                     )

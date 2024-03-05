@@ -486,4 +486,22 @@
     .button-div-sub-header>button {
         width: 100%;
     }
+
+    .form-main-div>form>p {
+        font-size: medium;
+    }
+
+    .form-main-div>form>h1 {
+        font-size: 38px;
+    }
+
+    .form-main-div>form>input {
+        height: 30px;
+        padding-left: 5px;
+    }
+
+    .form-main-div>form>textarea {
+        height: 30px;
+        padding-left: 5px;
+    }
 }
