@@ -4,6 +4,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import { FaHome, FaPhoneAlt, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import FooterLogo from '../../assets/nav-logo.png'
+import details from '../../Data/MajorDetails';
 
 const pages = [
     {
@@ -29,6 +30,16 @@ const pages = [
 ]
 
 export default function FooterComp() {
+    const {
+        companyPhone1,
+        companyPhone2,
+        companyAddress,
+        companyEmail,
+        companyTwitter,
+        companyFacebook,
+        companyLinkedin,
+        companyInstagram,
+    } = details
     return (
         <MDBFooter bgColor='black' color='white' className='text-center text-lg-start text-muted'>
             <section className='d-flex justify-content-center justify-content-lg-between border-bottom p-2'>
@@ -37,16 +48,16 @@ export default function FooterComp() {
                 </div>
 
                 <div>
-                    <Link to={''} className='me-4 text-reset white-color social-links'>
+                    <Link to={companyFacebook} className='me-4 text-reset white-color social-links'>
                         <FaFacebookF />
                     </Link>
-                    <Link to={''} className='me-4 text-reset white-color social-links'>
+                    <Link to={companyTwitter} className='me-4 text-reset white-color social-links'>
                         <FaTwitter />
                     </Link>
-                    <Link to={''} className='me-4 text-reset white-color social-links'>
+                    <Link to={companyInstagram} className='me-4 text-reset white-color social-links'>
                         <FaInstagram />
                     </Link>
-                    <Link to={''} className='me-4 text-reset white-color social-links'>
+                    <Link to={companyLinkedin} className='me-4 text-reset white-color social-links'>
                         <FaLinkedinIn />
                     </Link>
                 </div>
@@ -78,19 +89,19 @@ export default function FooterComp() {
                             <h4 className='text-uppercase fw-bold mb-4 white-color'>Contact</h4>
                             <Link className='white-color footer-links'>
                                 <FaHome className='me-2' />
-                                New York, NY 10012, US
+                                {companyAddress}
                             </Link>
-                            <Link to={'mailto:'} className='white-color footer-links'>
+                            <Link to={'mailto:' + companyEmail} className='white-color footer-links'>
                                 <MdEmail className='me-2' />
-                                info@example.com
+                                {companyEmail}
                             </Link>
-                            <Link to={'tell:+44 (0) 793 266 4441'} className='white-color footer-links'>
+                            <Link to={'tell:' + companyPhone1} className='white-color footer-links'>
                                 <FaPhoneAlt className='me-2' />
-                                +44 (0) 793 266 4441
+                                {companyPhone1}
                             </Link>
-                            <Link to={'tel:+44 (0) 795 130 3206'} className='white-color footer-links'>
+                            <Link to={'tel:' + companyPhone2} className='white-color footer-links'>
                                 <FaPhoneAlt className='me-2' />
-                                +44 (0) 795 130 3206
+                                {companyPhone2}
                             </Link>
                         </MDBCol>
                     </MDBRow>

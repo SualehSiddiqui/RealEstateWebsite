@@ -4,16 +4,17 @@ import SeperatorImg from '../../assets/Home/seperator-img.png';
 import AOS from 'aos';
 import { useEffect } from 'react';
 import properties from '../../Data/Property.js';
-import { useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import PropertiesSec from '../../Sections/properties.jsx'
 import { Image } from 'antd';
-
+import details from '../../Data/MajorDetails.js';
 
 const PropertyManagementPage = () => {
     // eslint-disable-next-line
     let [searchParams, setSearchParams] = useSearchParams();
     const index = searchParams.get('index') || 0;
-    const { name, price, images, text } = properties[index];
+    const { companyEmail } = details;
+    const { name, price, images, text, bedrooms, bathrooms, furnished, floor, marble, parking } = properties[index];
     useEffect(() => {
         AOS.init();
     }, [])
@@ -47,14 +48,16 @@ const PropertyManagementPage = () => {
                         </div>
                     </div>
                     <div className='sub-property-div-2' data-aos-duration="700" data-aos="fade-left">
-                        <button>Enquire about this property</button>
+                        <Link className='enquire-button' to={'mailto:' + companyEmail}>
+                            <button>Enquire about this property</button>
+                        </Link>
                         <div className='features-div-main mt-3'>
-                            <div className='feature-div'>4 Bedrooms</div>
-                            <div className='feature-div bathroom'>2 Bathrooms</div>
-                            <div className='feature-div furnished'>Furnished</div>
-                            <div className='feature-div floor'>1st Floor</div>
-                            <div className='feature-div marble'>Marble Arch</div>
-                            <div className='feature-div parking'>No Parking</div>
+                            {bedrooms.show && <div className='feature-div'>{bedrooms.number} Bedrooms</div>}
+                            {bathrooms.show && <div className='feature-div bathroom'>{bathrooms.number} Bathrooms</div>}
+                            {furnished.show && <div className='feature-div furnished'>Furnished</div>}
+                            {floor.show && <div className='feature-div floor'>{floor.number} Floor</div>}
+                            {marble.show && <div className='feature-div marble'>Marble Arch</div>}
+                            {parking.show && <div className='feature-div parking'>No Parking</div>}
                         </div>
                         <p>
                             {text}

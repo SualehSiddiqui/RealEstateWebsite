@@ -6,7 +6,7 @@ import NavLogo from '../../assets/nav-logo.png'
 import { useLocation } from 'react-router-dom';
 import { FaPhoneAlt } from "react-icons/fa";
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import details from '../../Data/MajorDetails';
 
 const pages = [
     {
@@ -41,8 +41,7 @@ const pages = [
 function OffcanvasExample() {
     const location = useLocation();
     const { pathname } = location
-    const phone1 = '+44 (0) 793 266 4441'
-    const phone2 = '+44 (0) 795 130 3206'
+    const { companyPhone2, companyPhone1 } = details
     return (
         <>
             <Navbar expand="lg" className="main-navbar">
@@ -89,11 +88,11 @@ function OffcanvasExample() {
                             }
                         </Nav>
                         <Nav className="ms-auto d-flex flex-column">
-                            <Nav.Link href={`tel:${phone1}`} className='nav-phone-link'>
-                                <FaPhoneAlt size={16} /> {phone1}
+                            <Nav.Link href={`tel:${companyPhone1}`} className='nav-phone-link'>
+                                <FaPhoneAlt size={16} /> {companyPhone1}
                             </Nav.Link>
-                            <Nav.Link href={`tel:${phone2}`} className='nav-phone-link'>
-                                <FaPhoneAlt size={16} /> {phone2}
+                            <Nav.Link href={`tel:${companyPhone2}`} className='nav-phone-link'>
+                                <FaPhoneAlt size={16} /> {companyPhone2}
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

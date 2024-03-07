@@ -56,7 +56,11 @@
     padding: 20px;
 }
 
-.sub-property-div-2>button {
+.enquire-button{
+    text-decoration: none;
+}
+
+.enquire-button button {
     width: 100%;
     padding: 7px;
     background-color: transparent;
@@ -66,7 +70,7 @@
     transition: 0.3s;
 }
 
-.sub-property-div-2>button:hover {
+.enquire-button button:hover {
     background-color: var(--theme-color-1);
     border: 1px solid var(--theme-color-2);
     color: white;

@@ -7,8 +7,10 @@ import CounterComp from '../../Components/Counter/index.jsx';
 import AOS from 'aos';
 import { useEffect } from 'react';
 import PropertiesSec from '../../Sections/properties.jsx';
+import details from '../../Data/MajorDetails.js';
 
 const HomePage = () => {
+    const { companyName } = details;
     useEffect(() => {
         AOS.init();
     }, [])
@@ -108,9 +110,9 @@ const HomePage = () => {
             <div className='hero-section-div'></div>
             <div className='main-home-div'>
                 <Container>
-                    <div className='home-text-div'  data-aos-duration="700" data-aos="zoom-in">
+                    <div className='home-text-div' data-aos-duration="700" data-aos="zoom-in">
                         <div>
-                            Lush Lets London Ltd
+                            {companyName}
                             <br />
                             Property Consultants
                         </div>
@@ -233,7 +235,7 @@ const HomePage = () => {
                     </div>
                     <div data-aos-duration="700" data-aos="zoom-in-up">
                         <p className='mt-3 text-center'>
-                            What makes an agent a great agent? At Lush Lets London Property Consultants, we believe
+                            What makes an agent a great agent? At {companyName} Property Consultants, we believe
                             it encompasses the ability to evoke curiosity. Nothing brings us greater satisfaction than
                             exceeding individuals' anticipations.
                         </p>
@@ -414,7 +416,7 @@ const HomePage = () => {
                                 <div className='benefit-card-img-div'></div>
                                 <h4 className='text-center'>Network & Connections</h4>
                                 <p className='text-center'>
-                                    With a large network across London, our team at Lush Lets London Ltd
+                                    With a large network across London, our team at {companyName}
                                     International have the knowledge and connections to help you find the
                                     perfect property.
                                 </p>
@@ -423,7 +425,7 @@ const HomePage = () => {
                                 <div className='benefit-card-img-div benefit-card-img-div-2'></div>
                                 <h4 className='text-center'>Network & Connections</h4>
                                 <p className='text-center'>
-                                    With a large network across London, our team at Lush Lets London Ltd
+                                    With a large network across London, our team at {companyName}
                                     International have the knowledge and connections to help you find the
                                     perfect property.
                                 </p>
@@ -432,7 +434,7 @@ const HomePage = () => {
                                 <div className='benefit-card-img-div benefit-card-img-div-3'></div>
                                 <h4 className='text-center'>Network & Connections</h4>
                                 <p className='text-center'>
-                                    With a large network across London, our team at Lush Lets London Ltd
+                                    With a large network across London, our team at {companyName}
                                     International have the knowledge and connections to help you find the
                                     perfect property.
                                 </p>

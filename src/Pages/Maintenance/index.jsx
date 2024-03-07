@@ -4,10 +4,11 @@ import SeperatorImg from '../../assets/Home/seperator-img.png'
 import AOS from 'aos';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import details from '../../Data/MajorDetails.js'
 
 const MaintenancePage = () => {
-    const email = 'info@l4properties.co.uk';
     const websiteLink = '/';
+    const { companyEmail } = details
 
     useEffect(() => {
         AOS.init();
@@ -52,7 +53,7 @@ const MaintenancePage = () => {
                     </li>
                     <li>
                         For tenants in non-managed properties or landlords requiring assistance with property maintenance, please reach out
-                        to us at <Link to={'mailto:' + email} className='maintenance-link' > {email} </Link> with the property address and your contact details, and we'll respond promptly.
+                        to us at <Link to={'mailto:' + companyEmail} className='maintenance-link' > {companyEmail} </Link> with the property address and your contact details, and we'll respond promptly.
                     </li>
                     <li>
                         For bespoke development inquiries, please visit our <Link to={websiteLink} target='_blank' className='maintenance-link'>website</Link>.

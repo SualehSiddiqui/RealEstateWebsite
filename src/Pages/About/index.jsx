@@ -3,8 +3,10 @@ import './style.css';
 import SeperatorImg from '../../assets/Home/seperator-img.png'
 import AOS from 'aos';
 import { useEffect } from 'react';
+import details from '../../Data/MajorDetails';
 
 const AboutPage = () => {
+    const { companyName } = details;
 
     useEffect(() => {
         AOS.init();
@@ -14,10 +16,10 @@ const AboutPage = () => {
         <div className='main-body-div'>
             <div className='about-banner-div'></div>
             <Container className='about-text-container'>
-                <div className='text-center about-text'  data-aos-duration="700" data-aos="zoom-in">
+                <div className='text-center about-text' data-aos-duration="700" data-aos="zoom-in">
                     about&nbsp;
                     <span className='golden-color'>
-                        LUSH LET LONDON LTD
+                        {companyName}
                     </span>
                 </div>
                 <div className='line-div'></div>
@@ -27,7 +29,7 @@ const AboutPage = () => {
                         estate landscape, specializing in both residential and commercial properties.
                     </li>
                     <li>
-                        At Lush Let London Ltd, our commitment lies in furnishing our clients and investors
+                        At {companyName}, our commitment lies in furnishing our clients and investors
                         with the latest market insights and pertinent information. Bolstered by a track record
                         of success and years of expertise, we continue to thrive even amidst challenging market
                         conditions.
@@ -58,7 +60,7 @@ const AboutPage = () => {
                         our cohesive approach ensures client satisfaction at every turn.
                     </li>
                     <li>
-                        Each member of the Lush Let London Ltd team is handpicked for their expertise, integrity, and passion for the
+                        Each member of the {companyName} team is handpicked for their expertise, integrity, and passion for the
                         industry. Together, we uphold the highest standards of professionalism, respect, and dedication to our craft.
                     </li>
                 </ul>
