@@ -44,7 +44,7 @@ function OffcanvasExample() {
     const { companyPhone2, companyPhone1 } = details
     return (
         <>
-            <Navbar expand="lg" className="main-navbar">
+            <Navbar expand="lg" className="main-navbar sticky-top">
                 <Container>
                     <Navbar.Brand href="/">
                         <img src={NavLogo} className='navbar-logo-img' alt="navbar_logo" />

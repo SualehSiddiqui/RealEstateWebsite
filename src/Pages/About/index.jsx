@@ -25,7 +25,7 @@ const AboutPage = () => {
                 <div className='line-div'></div>
                 <ul data-aos-duration="700" data-aos="zoom-in-up">
                     <li>
-                        L-Four Properties stands as a prominent figure in Central London's real
+                        {companyName} stands as a prominent figure in Central London's real
                         estate landscape, specializing in both residential and commercial properties.
                     </li>
                     <li>

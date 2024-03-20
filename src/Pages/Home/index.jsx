@@ -252,7 +252,7 @@ const HomePage = () => {
                     </div>
                     <div className='home-banner'>
                         <div data-aos-duration="700" data-aos="zoom-in-up">
-                            <h1 className='golden-color'>L4 PROPERTY Management</h1>
+                            <h1 className='golden-color'>{companyName}</h1>
                             <h3 className='white-color mt-4'>Helps Landlords Achieve More</h3>
                             <h2 className='white-color mb-4'>With Guaranteed Rent Services</h2>
                             <h1 className='white-color'>Call Us Now</h1>
@@ -271,7 +271,7 @@ const HomePage = () => {
                     <div className='home-banner home-banner-2'>
                         <div data-aos-duration="700" data-aos="zoom-in-up">
                             <h2 className='golden-color'>
-                                L-Four Property Management Guarantee's Landlords a rental income
+                                {companyName} Guarantee's Landlords a rental income
                                 regardless of tenants or not.
                             </h2>
                             <h1 className='golden-color mt-4'>
@@ -369,12 +369,12 @@ const HomePage = () => {
                             </p>
                         </div>
                         <div className='main-home-cards-div'>
-                            <div className='home-card-div' data-aos-duration="700" data-aos="zoom-in">
+                            <div className='home-card-div me-1' data-aos-duration="700" data-aos="zoom-in">
                                 <h2 className='white-color'>Guaranteed Rent Management</h2>
                                 <p className='white-color'>We help landlords maximize their rental income through guaranteed rent.</p>
                                 <button className='home-card-btn'>Our Landlord Solution</button>
                             </div>
-                            <div className='home-card-div home-card-div-2' data-aos-duration="700" data-aos="zoom-in" >
+                            <div className='home-card-div home-card-div-2 me-1' data-aos-duration="700" data-aos="zoom-in" >
                                 <h2 className='white-color'>Residential Letting In London For Landlords</h2>
                                 <p className='white-color'>Helping landlords collect rent and rent out properties with peace of mind. Letting properties the intelligent guaranteed way.</p>
                                 <button className='home-card-btn'>Our Landlord Solution</button>
@@ -437,6 +437,42 @@ const HomePage = () => {
                                     With a large network across London, our team at {companyName}
                                     International have the knowledge and connections to help you find the
                                     perfect property.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='seperator mt-5 mb-5'>
+                        <div className='sub-seperator-div-1'></div>
+                        <img src={SeperatorImg} alt="" />
+                        <div className='sub-seperator-div-1'></div>
+                    </div>
+                    <div className='home-banner home-banner-4 home-banner-5'>
+                        <h1 data-aos-duration="700" data-aos="fade-right">
+                            END TO END<span className='golden-color'> ASSISTANCE</span>
+                        </h1>
+                        <div className='main-home-cards-div mt-3' data-aos-duration="700" data-aos="zoom-in">
+                            <div className='benefit-card-div' data-aos-duration="700" data-aos="zoom-in" >
+                                <div className='benefit-card-img-div assist-card-img-div'></div>
+                                <h4 className='text-center'>Search & Shortlisting</h4>
+                                <p className='text-center'>
+                                    Lacs of verified listing from reputed and
+                                    trusted dealers.
+                                </p>
+                            </div>
+                            <div className='benefit-card-div' data-aos-duration="700" data-aos="zoom-in">
+                                <div className='benefit-card-img-div assist-card-img-div-2'></div>
+                                <h4 className='text-center'>Site Visit</h4>
+                                <p className='text-center'>
+                                    Guided site visits by our experienced
+                                    team managers.
+                                </p>
+                            </div>
+                            <div className='benefit-card-div' data-aos-duration="700" data-aos="zoom-in">
+                                <div className='benefit-card-img-div assist-card-img-div-3'></div>
+                                <h4 className='text-center'>Take the Possession</h4>
+                                <p className='text-center'>
+                                    Commited guidance all the way
+                                    till possession.
                                 </p>
                             </div>
                         </div>

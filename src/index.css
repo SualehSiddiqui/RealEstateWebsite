@@ -1,6 +1,7 @@
 :root {
   --theme-color-1: #000;
-  --theme-color-2: #eeb111;
+  /* --theme-color-2: #eeb111; */
+  --theme-color-2: #f3c355;
 }
 
 body {

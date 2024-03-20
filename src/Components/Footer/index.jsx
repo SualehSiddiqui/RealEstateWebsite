@@ -31,6 +31,7 @@ const pages = [
 
 export default function FooterComp() {
     const {
+        companyName,
         companyPhone1,
         companyPhone2,
         companyAddress,
@@ -109,7 +110,7 @@ export default function FooterComp() {
             </section>
 
             <div className='sub-footer'>
-                © 2024 Copyright: LUSH LET LONDON LTD
+                © 2024 Copyright: {companyName} LTD
             </div>
         </MDBFooter>
     );

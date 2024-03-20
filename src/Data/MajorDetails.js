@@ -1,5 +1,5 @@
 const details = {
-    companyName: 'Lush Lets London Ltd ',
+    companyName: 'Shahid and Sons ',
     companyEmail: 'xyz@gmail.com',
     companyPhone1: '+44 (0) 793 266 4441',
     companyPhone2: '+44 (0) 795 130 3206',
