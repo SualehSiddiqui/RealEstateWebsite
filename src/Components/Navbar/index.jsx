@@ -49,6 +49,11 @@ function OffcanvasExample() {
                     <Navbar.Brand href="/">
                         <img src={NavLogo} className='navbar-logo-img' alt="navbar_logo" />
                     </Navbar.Brand>
+                    <Nav className="ms-auto mt-1 me-3 d-flex flex-column res-phone-icon">
+                        <Nav.Link href={`tel:${companyPhone2}`} className='nav-phone-link'>
+                            <FaPhoneAlt size={32} />
+                        </Nav.Link>
+                    </Nav>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ color: 'white' }} />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto me-auto">
@@ -87,7 +92,7 @@ function OffcanvasExample() {
                                 })
                             }
                         </Nav>
-                        <Nav className="ms-auto d-flex flex-column">
+                        <Nav className="ms-auto d-flex flex-column res-phone-icon-2">
                             <Nav.Link href={`tel:${companyPhone1}`} className='nav-phone-link'>
                                 <FaPhoneAlt size={16} /> {companyPhone1}
                             </Nav.Link>

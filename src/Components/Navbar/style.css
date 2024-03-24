@@ -61,3 +61,17 @@
     background-color: var(--theme-color-1);
     color: var(--theme-color-2);
 }
+
+.res-phone-icon{
+    display: none !important;
+}
+
+@media  screen and (max-width: 992px){
+    .res-phone-icon{
+        display: flex !important;
+    }
+
+    .res-phone-icon-2{
+        display: none !important;
+    }
+}

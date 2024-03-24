@@ -431,6 +431,10 @@
         width: 95%;
     }
 
+    .hd-div{
+        text-align: center;
+    }
+
     .hd-div>h3 {
         display: block;
     }
