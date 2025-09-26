@@ -2,22 +2,59 @@ import { Container } from 'react-bootstrap';
 import './style.css';
 import SeperatorImg from '../../assets/Home/seperator-img.png';
 import AOS from 'aos';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import properties from '../../Data/Property.js';
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import PropertiesSec from '../../Sections/properties.jsx'
 import { Image } from 'antd';
 import details from '../../Data/MajorDetails.js';
 
-const PropertyManagementPage = () => {
+const PropertyPage = () => {
     // eslint-disable-next-line
-    let [searchParams, setSearchParams] = useSearchParams();
-    const index = searchParams.get('index') || 0;
+    const params = useParams();
+    const { index } = params;
+
+    console.log(index);
     const { companyEmail } = details;
-    const { name, price, images, text, bedrooms, bathrooms, furnished, floor, marble, parking } = properties[index];
+
+    const [propertyData, setPropertyData] = useState({
+        name: '',
+        price: '',
+        images: [],
+        text: '',
+        bedrooms: '',
+        bathrooms: '',
+        furnished: '',
+        floor: '',
+        marble: '',
+        parking: '',
+    });
+
+    useEffect(() => {
+        fetchPropertyDetails(index);
+    }, [index]);
+
+    const fetchPropertyDetails = (index) => {
+        if (properties[index]) {
+            const propertyData = properties[index];
+            setPropertyData({
+                name: propertyData.name,
+                price: propertyData.price,
+                images: propertyData.images,
+                text: propertyData.text,
+                bedrooms: propertyData.bedrooms,
+                bathrooms: propertyData.bathrooms,
+                furnished: propertyData.furnished,
+                floor: propertyData.floor,
+                marble: propertyData.marble,
+                parking: propertyData.parking,
+            });
+        };
+    }
+
     useEffect(() => {
         AOS.init();
-    }, [])
+    }, []);
 
     return (
         <div className='main-body-div'>
@@ -26,20 +63,20 @@ const PropertyManagementPage = () => {
                 <div className='main-property-div'>
                     <div className='sub-property-div-1' data-aos-duration="700" data-aos="fade-right">
                         <h1>
-                            {name}
+                            {propertyData.name}
                         </h1>
                         <h2 className='golden-color'>
-                            {price}
+                            {propertyData.price}
                         </h2>
                         <div className='img-main-div'>
-                            <img src={require(`../../assets/Properties/${images[0]}`)} alt="main_img" />
+                            <img src={propertyData.images[0]} alt="main_img" />
                         </div>
                         <div className='small-img-main-div'>
                             {
-                                images.map((v, i) => {
+                                propertyData.images.map((v, i) => {
                                     return (
                                         <div className='small-img-div' key={i}>
-                                            <Image src={require(`../../assets/Properties/${v}`)} alt="sub_img" />
+                                            <Image width={200} height={120} src={v} alt="sub_img" />
                                         </div>
 
                                     )
@@ -52,15 +89,15 @@ const PropertyManagementPage = () => {
                             <button>Enquire about this property</button>
                         </Link>
                         <div className='features-div-main mt-3'>
-                            {bedrooms.show && <div className='feature-div'>{bedrooms.number} Bedrooms</div>}
-                            {bathrooms.show && <div className='feature-div bathroom'>{bathrooms.number} Bathrooms</div>}
-                            {furnished.show && <div className='feature-div furnished'>Furnished</div>}
-                            {floor.show && <div className='feature-div floor'>{floor.number} Floor</div>}
-                            {marble.show && <div className='feature-div marble'>Marble Arch</div>}
-                            {parking.show && <div className='feature-div parking'>No Parking</div>}
+                            {propertyData.bedrooms.show && <div className='feature-div'>{propertyData.bedrooms.number} Bedrooms</div>}
+                            {propertyData.bathrooms.show && <div className='feature-div bathroom'>{propertyData.bathrooms.number} Bathrooms</div>}
+                            {propertyData.furnished.show && <div className='feature-div furnished'>Furnished</div>}
+                            {propertyData.floor.show && <div className='feature-div floor'>{propertyData.floor.number} Floor</div>}
+                            {propertyData.marble.show && <div className='feature-div marble'>Marble Arch</div>}
+                            {propertyData.parking.show && <div className='feature-div parking'>No Parking</div>}
                         </div>
                         <p>
-                            {text}
+                            {propertyData.text}
                         </p>
                     </div>
                 </div>
@@ -79,4 +116,4 @@ const PropertyManagementPage = () => {
         </div>
     )
 }
-export default PropertyManagementPage;
+export default PropertyPage;

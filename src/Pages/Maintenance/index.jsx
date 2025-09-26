@@ -49,7 +49,7 @@ const MaintenancePage = () => {
                     </li>
                     <li>
                         If you're a tenant in one of our non-managed properties and need to report a maintenance issue, please utilize
-                        our dedicated maintenance form.
+                        our dedicated <Link to={'/contact'} className='maintenance-link' > maintenance form </Link>.
                     </li>
                     <li>
                         For tenants in non-managed properties or landlords requiring assistance with property maintenance, please reach out

@@ -6,14 +6,14 @@ import { useNavigate } from "react-router-dom";
 const PropertiesSec = () => {
     const navigate = useNavigate();
     const handleClick = (i) => {
-        navigate(`/Properties?index=${i}`);
+        navigate(`/Properties/${i}`);
     }
     return (
         <>
             <h1 className='text-start' data-aos-duration="700" data-aos="fade-right">
                 FEATURED <span className='golden-color'>PROPERTIES</span>
             </h1>
-            <div className='main-home-cards-div mt-3'>
+            <div className='main-property-cards-div mt-3'>
                 {
                     properties.map((v, i) => {
                         return (
@@ -21,7 +21,7 @@ const PropertiesSec = () => {
                                 <div className='img-div' style={{ backgroundImage: `url(../assets/Properties/${v.images[0]})` }}>
                                     <div className='sub-properties-card-div-1'></div>
                                     <div className='sub-properties-card-div-2'></div>
-                                    <img src={require(`../assets/Properties/${v.images[0]}`)} alt="" />
+                                    <img src={v.images[0]} alt="" />
                                 </div>
                                 <p>
                                     {v.name}

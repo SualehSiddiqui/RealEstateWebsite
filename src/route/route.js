@@ -27,7 +27,7 @@ const RouterPages = () => {
                 <Route path='/' element={<HomePage />} />
                 <Route path='/About' element={<AboutPage />} />
                 <Route path='/Contact' element={<ContactPage />} />
-                <Route path='/Properties' element={<PropertyPage />} />
+                <Route path='/Properties/:index' element={<PropertyPage />} />
                 <Route path='/PropertyManagement' element={<PropertyManagementPage />} />
                 <Route path='/Maintenance' element={<MaintenancePage />} />
                 <Route path='*' element={<NotFoundPage />} />

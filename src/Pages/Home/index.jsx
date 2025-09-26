@@ -16,103 +16,12 @@ const HomePage = () => {
     }, [])
     return (
         <div className='main-body-div'>
-            <div className="sub-header-div">
-                <Container className='sub-header-div-container'>
-                    <div className='selection-div selection-div-1'>
-                        <select name="location" defaultValue={'noValue'}>
-                            <option value="noValue" hidden disabled>Choose Location</option>
-                            <option value="">Show All Locations</option>
-                            <option value="Mayfair">Mayfair</option>
-                            <option value="Marylebone">Marylebone</option>
-                            <option value="Maida-Vale">Maida Vale</option>
-                            <option value="St-Johns-Wood">St Johns Wood</option>
-                            <option value="Knightsbridge">Knightsbridge</option>
-                            <option value="South-Kensington">South Kensington</option>
-                            <option value="Hyde-Park">Hyde Park</option>
-                            <option value="Bayswater">Bayswater</option>
-                            <option value="Notting-Hill">Notting Hill</option>
-                            <option value="Other-London-Properties">Other London Properties</option>
-                        </select>
-                    </div>
-                    <div className='selection-div'>
-                        <select name="bedrooms" defaultValue={'noValue'}>
-                            <option value="noValue" hidden disabled>Bedrooms</option>
-                            <option value="X">Show All</option>
-                            <option value="0">Studios</option>
-                            <option value="1">1 Bedroom</option>
-                            <option value="2">2 Bedrooms</option>
-                            <option value="3">3 Bedrooms</option>
-                            <option value="4">4 Bedrooms or more</option>
-                        </select>
-                    </div>
-                    <div className='selection-div'>
-                        <select name="minprice" defaultValue={'noValue'}>
-                            <option value="noValue" hidden disabled>Minimum Price</option>
-                            <option value="0">Show All</option>
-                            <option value="100">Â£100 per week</option>
-                            <option value="200">Â£200 per week</option>
-                            <option value="300">Â£300 per week</option>
-                            <option value="400">Â£400 per week</option>
-                            <option value="500">Â£500 per week</option>
-                            <option value="600">Â£600 per week</option>
-                            <option value="750">Â£750 per week</option>
-                            <option value="1000">Â£1,000 per week</option>
-                            <option value="2000">Â£2,000 per week</option>
-                            <option value="3000">Â£3,000 per week</option>
-                            <option value="4000">Â£4,000 per week</option>
-                            <option value="5000">Â£5,000 per week</option>
-                            <option value="7500">Â£7,500 per week</option>
-                        </select>
-                    </div>
-                    <div className='selection-div'>
-                        <select name="maxprice" defaultValue={'noValue'}>
-                            <option value="noValue" hidden disabled>Maximum Price</option>
-                            <option value="49999">Show All</option>
-                            <option value="200">Â£200 per week</option>
-                            <option value="300">Â£300 per week</option>
-                            <option value="400">Â£400 per week</option>
-                            <option value="500">Â£500 per week</option>
-                            <option value="600">Â£600 per week</option>
-                            <option value="750">Â£750 per week</option>
-                            <option value="1000">Â£1,000 per week</option>
-                            <option value="2000">Â£2,000 per week</option>
-                            <option value="3000">Â£3,000 per week</option>
-                            <option value="4000">Â£4,000 per week</option>
-                            <option value="5000">Â£5,000 per week</option>
-                            <option value="7500">Â£7,500 per week</option>
-                            <option value="10000">Â£10,000 per week</option>
-                        </select>
-                    </div>
-                    <div className='selection-div'>
-                        <select name="currency" defaultValue={'noValue'}>
-                            <option value="noValue" hidden disabled>Show Price In </option>
-                            <option value="GBP">UK Pounds (Â£)</option>
-                            <option value="USD">US Dollars ($)</option>
-                            <option value="EUR">Euros (â‚¬)</option>
-                            <option value="CNY">Chinese Yuan (Â¥)</option>
-                            <option value="HKD">Hong Kong Dollars ($)</option>
-                            <option value="SGD">Singapore Dollars ($)</option>
-                            <option value="JPY">Japanese Yen (Â¥)</option>
-                            <option value="RUB">Russian Rubles (Ñ€ÑƒÐ±)</option>
-                            <option value="AED">UAE Dirham (Ø¯.Ø¥)</option>
-                            <option value="BHD">Bahraini Dinar (.Ø¯.Ø¨)</option>
-                            <option value="KWD">Kuwaiti Dinar (.Ø¯.Ø¨)</option>
-                            <option value="QAR">Qatari Riyal (Ø±.Ù‚)</option>
-                            <option value="SAR">Saudi Riyal (Ø±.Ù‚)</option>
-                            <option value="EGP">Egyptian Pounds (EÂ£)</option>
-                        </select>
-                    </div>
-                    <div className='selection-div button-div-sub-header'>
-                        <button type="submit" >Begin Search</button>
-                    </div>
-                </Container>
-            </div>
             <div className='hero-section-div'></div>
             <div className='main-home-div'>
                 <Container>
                     <div className='home-text-div' data-aos-duration="700" data-aos="zoom-in">
                         <div>
-                            {companyName}
+                            Lush Lets London Limited
                             <br />
                             Property Consultants
                         </div>

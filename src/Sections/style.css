@@ -1,6 +1,13 @@
+.main-property-cards-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
 .properties-card-div {
     width: 328px;
     height: 338px;
+    margin-left: 20px;
     text-align: start;
     cursor: pointer;
 }

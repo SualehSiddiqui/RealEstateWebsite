@@ -19,7 +19,7 @@ const pages = [
     },
     {
         name: 'Properties',
-        link: '/Properties',
+        link: '/Properties/0',
     },
     {
         name: 'Management',
