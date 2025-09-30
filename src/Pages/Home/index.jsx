@@ -30,7 +30,7 @@ const HomePage = () => {
                     <CounterComp className='counter mt-5' />
                 </Container>
             </div>
-            <div className="sub-header-div res-sub-header-div">
+            {/* <div className="sub-header-div res-sub-header-div">
                 <Container className='sub-header-div-container'>
                     <div className='selection-div selection-div-1  mt-1'>
                         <select name="location" defaultValue={'noValue'}>
@@ -120,8 +120,8 @@ const HomePage = () => {
                         <button type="submit" >Begin Search</button>
                     </div>
                 </Container>
-            </div>
-            <CounterComp className='res-counter mt-3 mb-3' />
+            </div> */}
+            {/* <CounterComp className='res-counter mt-3 mb-3' /> */}
             <div className='main-home-div-2'>
                 <Container >
                     <div className='main-hd-div'>
