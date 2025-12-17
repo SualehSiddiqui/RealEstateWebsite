@@ -13,7 +13,7 @@ const HomePage = () => {
     const { companyName } = details;
     useEffect(() => {
         AOS.init();
-    }, [])
+    }, []);
     return (
         <div className='main-body-div'>
             <div className='hero-section-div'></div>
@@ -31,7 +31,7 @@ const HomePage = () => {
                 </Container>
             </div>
             <div className='main-home-div-2'>
-                <Container >
+                <Container>
                     <div className='main-hd-div'>
                         <div className='hd-div'>
                             <h1 data-aos-duration="700" data-aos="fade-right">It is one thing to meet</h1>
@@ -311,6 +311,6 @@ const HomePage = () => {
             </div>
         </div>
     )
-}
+};
 
 export default HomePage;
